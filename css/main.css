@@ -282,8 +282,7 @@ a {
 }
 
 .about {
-  background: url("../img/bg_white.jpg") no-repeat;
-  background-size: cover;
+  background: url("../img/bg_white.jpg") repeat;
   padding: 40px 0;
 }
 
@@ -454,7 +453,7 @@ a {
 
 .ingredients .content__text {
   font-size: 16px;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
   padding-bottom: 20px;
 }
 
@@ -483,5 +482,179 @@ a {
 .ingredients .content__control .active {
   -webkit-box-shadow: 0 0 0 5pt #cc9900;
           box-shadow: 0 0 0 5pt #cc9900;
+}
+
+.menu {
+  background: url("../img/bg_white.jpg") repeat;
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .menu .container {
+    /*  display: grid;
+            grid: auto / 35% 35%;
+            gap:5% 15%;
+            justify-content: center; */
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+.menu .category {
+  text-align: center;
+  page-break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .menu .category {
+    padding: 0 10%;
+  }
+}
+
+.menu .category__title {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #cc9900;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+@media (min-width: 768px) {
+  .menu .category__title {
+    font-size: 36px;
+  }
+}
+
+.menu .category__divider {
+  width: 254px;
+  padding: 10px 0;
+}
+
+.menu .category__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.menu .category__item__name {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 21px;
+  color: #cc9900;
+  padding: 5px 0;
+}
+
+.menu .category__item__price {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 21px;
+  color: #cc9900;
+}
+
+.menu .category__item__desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4c4c4c;
+  text-align: left;
+  border-top: 1px solid #cc9900;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.menu .category__item--special {
+  border: 1px solid #cc9900;
+  position: relative;
+}
+
+.menu .category__item--special:before {
+  content: 'Special';
+  background-color: #cc9900;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 3px 10px;
+  position: absolute;
+  top: -23px;
+  right: -1px;
+}
+
+.reviews {
+  background: url("../img/bg_review.jpg") no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+.reviews .wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10% 10%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .reviews .wrapper {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .reviews .wrapper {
+    width: 40%;
+  }
+}
+
+.reviews .content__title {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #cc9900;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .reviews .content__title {
+    font-size: 36px;
+  }
+}
+
+.reviews .content__divider {
+  width: 254px;
+  padding: 10px 0;
+}
+
+.reviews .review-item__text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .reviews .review-item__text {
+    font-size: 22px;
+  }
+}
+
+.reviews .review-item__name {
+  color: #ffffff;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+.reviews .controls__left, .reviews .controls__right {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  margin: 0 50px;
+}
+
+.reviews .controls__left:hover, .reviews .controls__right:hover {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

@@ -10,9 +10,10 @@ $(".nav__burger").on('click', () => {
     $(".nav .nav__list").slideToggle(800);
 });
 
-//////// OWL CAROUSEL IN INGREDIENTS SECTION ////////
+//////// OWL CAROUSELS ////////
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    //  IN INGREDIENTS SECTION
+    $('.owl-one').owlCarousel({
         margin:50,  // margin between items
         items:1,    // display items
         /* dots:true, //controls dot
@@ -26,11 +27,25 @@ $(document).ready(function(){
             $('.content__controls').children().eq(indexItem).find( "img" ).addClass('active');
         },   
     })
+    //  IN REVIEWS SECTION
+    $('.owl-two').owlCarousel({
+        margin:50,  // margin between items
+        items:1,    // display items
+        loop: true, // infinity loop
+        //autoplay
+        autoplay: true,
+        autoplayTimeout: 6000,
+        autoplaySpeed: 2000,
+        //controls
+        nav: true,
+        navSpeed: 2000,
+        navText: [$('.controls .controls__left'),$('.controls .controls__right')], //custon controls define
+    })
 });
 
 // custom controls trigger slider
 $('.content__control').click(function () {
-    $('.owl-carousel').trigger('to.owl.carousel', [$(this).index(), 1500]);
+    $('.owl-one').trigger('to.owl.carousel', [$(this).index(), 1500]);
 });
 
 // custom controls on click toggle, add class active
@@ -40,8 +55,3 @@ $(".content__control__img").on('click', e => {
         $(e.target).addClass('active'); 
     } 
 });
-
-
-//controls
-/* nav: true,
-navText: [$('.dot'),$('.dot2')], */
