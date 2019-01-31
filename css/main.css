@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700|Lato:300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700|Lato:300,400,400i,700,900");
 body, p, ul, h1, h2, h3 {
   margin: 0;
   padding: 0;
@@ -437,6 +437,7 @@ a {
   color: #cc9900;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -656,5 +657,226 @@ a {
 
 .reviews .controls__left:hover, .reviews .controls__right:hover {
   color: white;
+}
+
+.reservations {
+  background: url("../img/bg_white.jpg") repeat;
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .reservations .container {
+    display: -ms-grid;
+    display: grid;
+    grid: auto / 48% 48%;
+    grid-column-gap: 4%;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .reservations .container {
+    grid: auto / 23% 23% 46%;
+    grid-column-gap: 4%;
+  }
+}
+
+.reservations .res-img {
+  display: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .reservations .res-img--1 {
+    background-image: url("../img/reservation_1.jpg");
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .reservations .res-img--2 {
+    background-image: url("../img/reservation_2.jpg");
+    display: block;
+  }
+}
+
+.reservations .content {
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .reservations .content {
+    width: 80%;
+  }
+}
+
+.reservations .content__title {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #cc9900;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+@media (min-width: 768px) {
+  .reservations .content__title {
+    font-size: 36px;
+  }
+}
+
+.reservations .content__divider {
+  width: 254px;
+  padding: 10px 0;
+}
+
+.reservations .content__text {
+  font-size: 16px;
+  color: #4c4c4c;
+}
+
+.reservations .content__form {
+  width: 100%;
+  text-align: left;
+  padding: 20px 0 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.reservations .content__form label {
+  color: #cc9900;
+  font-weight: 900;
+  font-size: 14px;
+  display: block;
+  padding: 10px 15px;
+}
+
+.reservations .content__form ::-webkit-input-placeholder {
+  font-size: 16px;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+}
+
+.reservations .content__form :-ms-input-placeholder {
+  font-size: 16px;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+}
+
+.reservations .content__form ::-ms-input-placeholder {
+  font-size: 16px;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+}
+
+.reservations .content__form ::placeholder {
+  font-size: 16px;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+}
+
+.reservations .content__form__name, .reservations .content__form__email, .reservations .content__form__date, .reservations .content__form__number {
+  font-family: 'Lato', sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.reservations .content__form__name:focus, .reservations .content__form__email:focus, .reservations .content__form__date:focus, .reservations .content__form__number:focus {
+  border-color: #cc9900;
+}
+
+.reservations .content__form input[type="date"]::-webkit-calendar-picker-indicator {
+  font-size: 18px;
+}
+
+.reservations .content__form input[type="date"]:hover {
+  cursor: pointer;
+}
+
+.reservations .content__form__btn {
+  border: none;
+  background-color: #cc9900;
+  color: #ffffff;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 30px 0 0 0;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.reservations .content__form__btn:hover {
+  cursor: pointer;
+  background-color: rgba(204, 153, 0, 0.7);
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .footer .container {
+    display: -ms-grid;
+    display: grid;
+    grid: auto / 33.33% 33.33% 33.33%;
+  }
+}
+
+.footer .content {
+  text-align: center;
+}
+
+.footer .content__title {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+@media (min-width: 768px) {
+  .footer .content__title {
+    font-size: 25px;
+  }
+}
+
+.footer .content__divider {
+  width: 205px;
+  padding: 10px 0;
+}
+
+.footer .content__text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.footer .content__icon {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 0 5px 20px 5px;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.footer .content__icon:hover {
+  color: #cc9900;
 }
 /*# sourceMappingURL=main.css.map */
