@@ -266,8 +266,6 @@ a {
   font-size: 18px;
   padding: 10px 26px;
   margin: 5px 15px;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
 }
 
 .header .content__btn:hover {
@@ -398,6 +396,14 @@ a {
 }
 
 @media (min-width: 768px) {
+  .ingredients .container {
+    display: -ms-grid;
+    display: grid;
+    grid: auto / 40% 60%;
+  }
+}
+
+@media (min-width: 1200px) {
   .ingredients .container {
     display: -ms-grid;
     display: grid;

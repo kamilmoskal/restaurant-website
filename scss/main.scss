@@ -1,5 +1,7 @@
+// FONTS
 @import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700|Lato:300,400,400i,700,900');
 
+// SCSS
 @import "./variables";
 @import "./mixins";
 @import "./reset";
@@ -169,7 +171,6 @@
             font-size:18px;
             padding:10px 26px;
             margin:5px 15px;
-            transition: all .5s ease-out;
             &:hover{
                 cursor: pointer;
                 border: 1px solid $white;
@@ -254,6 +255,10 @@
     }
     .container{
         @media (min-width:768px){
+            display: grid;
+            grid: auto / 40% 60%;
+        }
+        @media (min-width:1200px){
             display: grid;
             grid: auto / 50% 50%;
         }

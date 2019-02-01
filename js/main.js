@@ -10,6 +10,27 @@ $(".nav__burger").on('click', () => {
     $(".nav .nav__list").slideToggle(800);
 });
 
+//////// SCROLL ON NAV ITEM CLICK, TO SPECIFIC SECTIONS ////////
+$('.nav__list li:nth-child(1)').on("click", () => {
+    $('html, body').stop().animate({ scrollTop: $('header.header').offset().top }, 1000, 'easeInOutQuad');
+})
+$('.nav__list li:nth-child(2)').on("click", () => {
+    $('html, body').stop().animate({ scrollTop: $('section.about').offset().top }, 1000, 'easeInOutQuad');
+})
+$('.nav__list li:nth-child(3)').on("click", () => {
+    $('html, body').stop().animate({ scrollTop: $('section.ingredients').offset().top }, 1000, 'easeInOutQuad');
+})
+$('.nav__list li:nth-child(4), .header .content .content__btn:eq(1)').on("click", () => {
+    $('html, body').stop().animate({ scrollTop: $('section.menu').offset().top }, 1000, 'easeInOutQuad');
+})
+$('.nav__list li:nth-child(5)').on("click", () => {
+    $('html, body').stop().animate({ scrollTop: $('section.reviews').offset().top }, 1000, 'easeInOutQuad');
+})
+$('.nav__list li:nth-child(6), .header .content .content__btn:eq(0)').on("click", () => {
+    $('html, body').stop().animate({ scrollTop: $('section.reservations').offset().top }, 1000, 'easeInOutQuad');
+})
+
+
 //////// OWL CAROUSELS ////////
 $(document).ready(function(){
     //  IN INGREDIENTS SECTION
@@ -42,12 +63,10 @@ $(document).ready(function(){
         navText: [$('.controls .controls__left'),$('.controls .controls__right')], //custon controls define
     })
 });
-
 // custom controls, trigger slider
 $('.content__control').click(function () {
     $('.owl-one').trigger('to.owl.carousel', [$(this).index(), 1500]);
 });
-
 // custom controls on click toggle, add class active
 $(".content__control__img").on('click', e => {
     if ( !$(e.target).hasClass("active") ) {
@@ -55,3 +74,10 @@ $(".content__control__img").on('click', e => {
         $(e.target).addClass('active'); 
     } 
 });
+
+//////// AOS ////////
+AOS.init({
+  once: true, // whether animation should happen only once - while scrolling down
+});
+
+
