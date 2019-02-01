@@ -559,7 +559,7 @@
 .footer {
     background-color: rgba($black, .9);
     padding:40px 0;
-
+    overflow: hidden;
     .container{
         @media (min-width:768px){
            display: grid;

@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <!--OWL CAROUSEL CSS-->
+    <!--PLUGIN OWL CAROUSEL CSS-->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <!-- <link rel="stylesheet" href="./css/owl.theme.default.min.css"> -->
+    <!--PLUGIN AOS CSS-->
+    <link href="./css//aos.css" rel="stylesheet">
     <!--MAIN CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
 </head>
@@ -41,10 +42,10 @@
         </div>
         <div class="container">
             <div class="content">
-                <h1 class="content__title">the right ingredients <br> for the right food</h1>
-                <img class="content__divider" src="./img/main_divider.png" alt="main_divider">
-                <button class="content__btn">BOOK A TABLE</button>
-                <button class="content__btn">SEE THE MENU</button>
+                <h1 class="content__title" data-aos="fade-down" data-aos-duration="1000">the right ingredients <br> for the right food</h1>
+                <img class="content__divider" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" src="./img/main_divider.png" alt="main_divider">
+                <button class="content__btn" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">BOOK A TABLE</button>
+                <button class="content__btn" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">SEE THE MENU</button>
             </div>
         </div>
     </header>
@@ -52,18 +53,18 @@
     <section class="about">
         <div class="container">
             <div class="content">
-                <h1 class="content__title">Just the right food</h1>
-                <img class="content__divider" src="./img/gold_divider.png" alt="gold_divider">
-                <p class="content__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
+                <h1 class="content__title" data-aos="fade-down" data-aos-duration="1000">Just the right food</h1>
+                <img class="content__divider" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" src="./img/gold_divider.png" alt="gold_divider">
+                <p class="content__text" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
             </div>
-            <img class="autograf" src="./img/img_autograf.png" alt="img_autograf">
-            <img class="plate" src="./img/img_plate.png" alt="img_plate">
+            <img class="autograf" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" src="./img/img_autograf.png" alt="img_autograf">
+            <img class="plate" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" src="./img/img_plate.png" alt="img_plate">
         </div>
     </section>
 
     <section class="ingredients">
         <div class="container">
-            <div class="wrapper">
+            <div class="wrapper" data-aos="fade-left" data-aos-duration="1000">
                 <div class="content owl-carousel owl-one">
                     <div class="content__item">
                         <h1 class="content__title">Just the right food</h1>
@@ -82,9 +83,9 @@
                     </div>   
                 </div>
                 <div class="content__controls">
-                    <div class="content__control"><img class="content__control__img active" src="./img/ingredient_1.png" alt=""></div>
-                    <div class="content__control"><img class="content__control__img" src="./img/ingredient_2.png" alt=""></div>
-                    <div class="content__control"><img class="content__control__img" src="./img/ingredient_3.png" alt=""></div>
+                    <div class="content__control" data-aos="fade" data-aos-duration="1000" data-aos-delay="400"><img  class="content__control__img active" src="./img/ingredient_1.png" alt=""></div>
+                    <div class="content__control" data-aos="fade" data-aos-duration="1000" data-aos-delay="600"><img class="content__control__img" src="./img/ingredient_2.png" alt=""></div>
+                    <div class="content__control" data-aos="fade" data-aos-duration="1000" data-aos-delay="800"><img class="content__control__img" src="./img/ingredient_3.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -93,76 +94,76 @@
     <section class="menu">
         <div class="container">
             <div class="category">
-                <h1 class="category__title">Appetisers</h1>
-                <img class="category__divider" src="./img/gold_divider.png" alt="gold_divider">
-                <div class="category__item">
+                <h1 class="category__title" data-aos="fade-down" data-aos-duration="1000">Appetisers</h1>
+                <img class="category__divider" data-aos="zoom-in" data-aos-duration="1000" src="./img/gold_divider.png" alt="gold_divider">
+                <div class="category__item" data-aos="fade-right" data-aos-duration="1000">
                     <h2 class="category__item__name">Tzatsiki</h2>
                     <h2 class="category__item__price">$3.99</h2>
                     <p class="category__item__desc">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                 </div>
-                <div class="category__item">
+                <div class="category__item" data-aos="fade-right" data-aos-duration="1000">
                     <h2 class="category__item__name">Aubergine Salad</h2>
                     <h2 class="category__item__price">$5.55</h2>
                     <p class="category__item__desc">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
-                <div class="category__item">
+                <div class="category__item" data-aos="fade-right" data-aos-duration="1000">
                     <h2 class="category__item__name">Aubergine Salad</h2>
                     <h2 class="category__item__price">$5.25</h2>
                     <p class="category__item__desc">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
             </div>
             <div class="category">
-                <h1 class="category__title">Salads</h1>
-                <img class="category__divider" src="./img/gold_divider.png" alt="gold_divider">
-                <div class="category__item">
+                <h1 class="category__title" data-aos="fade-down" data-aos-duration="1000">Salads</h1>
+                <img class="category__divider" data-aos="zoom-in" data-aos-duration="1000" src="./img/gold_divider.png" alt="gold_divider">
+                <div class="category__item" data-aos="fade-right" data-aos-duration="1000">
                     <h2 class="category__item__name">Olive Special</h2>
                     <h2 class="category__item__price">$5.99</h2>
                     <p class="category__item__desc">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                 </div>
-                <div class="category__item category__item--special">
+                <div class="category__item category__item--special" data-aos="fade-right" data-aos-duration="1000">
                     <h2 class="category__item__name">Greek Salad</h2>
                     <h2 class="category__item__price">$5.50</h2>
                     <p class="category__item__desc">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
-                <div class="category__item">
+                <div class="category__item" data-aos="fade-right" data-aos-duration="1000">
                     <h2 class="category__item__name">Gusto Salad</h2>
                     <h2 class="category__item__price">$5.25</h2>
                     <p class="category__item__desc">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
             </div>
             <div class="category">
-                <h1 class="category__title">Starters</h1>
-                <img class="category__divider" src="./img/gold_divider.png" alt="gold_divider">
-                <div class="category__item">
+                <h1 class="category__title" data-aos="fade-down" data-aos-duration="1000">Starters</h1>
+                <img class="category__divider" data-aos="zoom-in" data-aos-duration="1000" src="./img/gold_divider.png" alt="gold_divider">
+                <div class="category__item" data-aos="fade-left" data-aos-duration="1000">
                     <h2 class="category__item__name">Haloumi</h2>
                     <h2 class="category__item__price">$3.99</h2>
                     <p class="category__item__desc">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                 </div>
-                <div class="category__item">
+                <div class="category__item" data-aos="fade-left" data-aos-duration="1000">
                     <h2 class="category__item__name">Spinach Pie</h2>
                     <h2 class="category__item__price">$5.50</h2>
                     <p class="category__item__desc">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
             </div>
             <div class="category">
-                <h1 class="category__title">Main Dishes</h1>
-                <img class="category__divider" src="./img/gold_divider.png" alt="gold_divider">
-                <div class="category__item">
+                <h1 class="category__title" data-aos="fade-down" data-aos-duration="1000">Main Dishes</h1>
+                <img class="category__divider" data-aos="zoom-in" data-aos-duration="1000" src="./img/gold_divider.png" alt="gold_divider">
+                <div class="category__item" data-aos="fade-left" data-aos-duration="1000">
                     <h2 class="category__item__name">Cornish Mackerel</h2>
                     <h2 class="category__item__price">$5.99</h2>
                     <p class="category__item__desc">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                 </div>
-                <div class="category__item category__item--special">
+                <div class="category__item category__item--special" data-aos="fade-left" data-aos-duration="1000">
                     <h2 class="category__item__name">Roast Lamb</h2>
                     <h2 class="category__item__price">$5.50</h2>
                     <p class="category__item__desc">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
-                <div class="category__item">
+                <div class="category__item" data-aos="fade-left" data-aos-duration="1000">
                     <h2 class="category__item__name">Fried Chicken</h2>
                     <h2 class="category__item__price">$5.25</h2>
                     <p class="category__item__desc">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                 </div>
-                <div class="category__item">
+                <div class="category__item" data-aos="fade-left" data-aos-duration="1000">
                     <h2 class="category__item__name">Pastitsio</h2>
                     <h2 class="category__item__price">$5.99</h2>
                     <p class="category__item__desc">Refreshing traditional cucumber and garlic yoghurt dip.</p>
@@ -173,10 +174,10 @@
 
     <section class="reviews">
         <div class="container">
-            <div class="wrapper">
+            <div class="wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                 <div class="content">
-                    <h1 class="content__title">Guest Reviews</h1>
-                    <img class="content__divider" src="./img/white_divider.png" alt="white_divider">
+                    <h1 class="content__title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">Guest Reviews</h1>
+                    <img class="content__divider" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" src="./img/white_divider.png" alt="white_divider">
                 </div>
                 <div class="owl-carousel owl-two">
                     <div class="review-item">
@@ -202,9 +203,9 @@
 
     <section class="reservations">
         <div class="container">
-            <div class="res-img res-img--1"></div>
-            <div class="res-img res-img--2"></div>
-            <div class="content">
+            <div class="res-img res-img--1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600"></div>
+            <div class="res-img res-img--2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400"></div>
+            <div class="content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                 <h1 class="content__title">Just the right food</h1>
                 <img class="content__divider" src="./img/gold_divider.png" alt="gold_divider">
                 <p class="content__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.<br><br>Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
@@ -225,12 +226,12 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="content">
+            <div class="content" data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="200">
                 <h1 class="content__title">About Us</h1>
                 <img class="content__divider" src="./img/footer_divider.png" alt="footer_divider">
                 <p class="content__text">Lambda's new and expanded Chelsea location represents a truly authentic <b>Greek</b> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café. Lamda the best restaurant in town</p>
             </div>
-            <div class="content">
+            <div class="content" data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="300">
                 <h1 class="content__title">Opening Hours</h1>
                 <img class="content__divider" src="./img/footer_divider.png" alt="footer_divider">
                 <p class="content__text"><b>Mon-Thu:</b> 7:00am-8:00pm <br> <b>Fri-Sun:</b> 7:00am-10:00pm</p>
@@ -238,7 +239,7 @@
                 <a href="#"><i class="content__icon fab fa-cc-visa"></i></a>
                 <a href="#"><i class="content__icon fab fa-cc-discover"></i></a>
             </div>
-            <div class="content">
+            <div class="content" data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="400">
                 <h1 class="content__title">Our Location</h1>
                 <img class="content__divider" src="./img/footer_divider.png" alt="footer_divider">
                 <p class="content__text">19th Paradise Street Sitia <br> 128 Meserole Avenue</p>
@@ -252,8 +253,11 @@
 
     <!--JQUERY -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-     <!--OWL CAROUSEL JS-->
+    <!--PLUGIN OWL CAROUSEL JS-->
     <script src="./js/owl.carousel.min.js"></script>
+    <!--PLUGIN AOS JS -->
+    <script src="./js/aos.js"></script>
+    <script>AOS.init();</script>
     <!--MAIN.JS -->
     <script src="./js/main.js"></script>
 </body>

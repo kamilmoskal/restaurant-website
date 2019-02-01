@@ -6,6 +6,7 @@ body, p, ul, h1, h2, h3 {
 
 body {
   font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
 }
 
 ul, li {
@@ -825,6 +826,7 @@ a {
 .footer {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 40px 0;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {

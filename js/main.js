@@ -43,7 +43,7 @@ $(document).ready(function(){
     })
 });
 
-// custom controls trigger slider
+// custom controls, trigger slider
 $('.content__control').click(function () {
     $('.owl-one').trigger('to.owl.carousel', [$(this).index(), 1500]);
 });
