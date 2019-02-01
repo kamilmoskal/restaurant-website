@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+section, footer, header, nav {
+  overflow: hidden;
+}
+
 ul, li {
   list-style: none;
 }
@@ -37,8 +41,8 @@ a {
 @media (min-width: 768px) {
   .nav {
     background-color: unset;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(transparent));
-    background-image: linear-gradient(#000000, transparent);
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(60%), to(transparent));
+    background: linear-gradient(#000000, 60%, transparent);
   }
 }
 
@@ -56,7 +60,7 @@ a {
 }
 
 .nav__logo {
-  width: 80px;
+  width: 100px;
   padding: 10px 0;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -64,6 +68,7 @@ a {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -85,6 +90,8 @@ a {
 
 .nav__logo__img {
   width: 100%;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .nav__burger {
@@ -166,6 +173,8 @@ a {
 .nav__item--icons i {
   font-size: 20px;
   padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #ffffff;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
@@ -488,8 +497,8 @@ a {
 }
 
 .ingredients .content__control .active {
-  -webkit-box-shadow: 0 0 0 5pt #cc9900;
-          box-shadow: 0 0 0 5pt #cc9900;
+  -webkit-box-shadow: 0 0 0 4pt #ffffff;
+          box-shadow: 0 0 0 4pt #ffffff;
 }
 
 .menu {

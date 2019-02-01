@@ -7,7 +7,7 @@ $(function(){
 
 //////// BURGER MENU ////////
 $(".nav__burger").on('click', () => {
-    $(".nav .nav__list").slideToggle(800);
+    $(".nav .nav__list").slideToggle(1000,'easeInOutQuad');
 });
 
 //////// SCROLL ON NAV ITEM CLICK, TO SPECIFIC SECTIONS ////////
@@ -77,7 +77,16 @@ $(".content__control__img").on('click', e => {
 
 //////// AOS ////////
 AOS.init({
-  once: true, // whether animation should happen only once - while scrolling down
+  once: false, // whether animation should happen only once - while scrolling down
 });
 
-
+//////// LOGO NAV RESIZE ON SCROLL ////////
+$(window).scroll(function () {
+    if ($(window).scrollTop() === 0){
+        $('.nav__logo__img').css({"width":"100%"});
+    } else {
+        $('.nav__logo__img').css({"width":"70%"});
+    }
+    /// refresh aos positions
+    AOS.refresh();
+});

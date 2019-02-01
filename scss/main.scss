@@ -16,7 +16,7 @@
 
     @media (min-width:768px){
         background-color:unset;
-        background-image: linear-gradient($black, transparent);
+        background: linear-gradient($black, 60%, transparent);
     }
     .container{
         display: grid;
@@ -28,9 +28,10 @@
         }
     }
     &__logo{
-        width:80px;
+        width:100px;
         padding:10px 0;
         grid-row: 1/2; grid-column: 2/3;
+        text-align: center;
 
         @media (min-width:768px){
             grid-row: 1/2; grid-column: 1/2;
@@ -40,6 +41,7 @@
         }
         &__img{
             width:100%;
+            transition: all .5s ease-out;
         }
     }
     &__burger{
@@ -93,6 +95,7 @@
             i{
                 font-size:20px;
                 padding:0 10px;
+                box-sizing: border-box;
                 color:$white;
                 transition: all .5s ease-out;
                 &:hover{
@@ -308,7 +311,7 @@
             }
         }
         .active{
-            box-shadow: 0 0 0 5pt $primary;
+            box-shadow: 0 0 0 4pt $white;
         }
     }
 }
